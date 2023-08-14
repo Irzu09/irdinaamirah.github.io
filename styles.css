@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a;
+    /* background: radial-gradient(600px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%); */
+}
+
+header {
+    text-align: initial;
+    padding: 2rem;
+}
+
+.basicInfo h1 {
+    font-size: 42px;
+    color: #ccd7ed;
+}
+
+.basicInfo h4 {
+    font-size: 24px;
+    margin-top: 18px;
+    color: #bfcadf
+}
+
+.basicInfo p {
+    font-size: 16px;
+    margin-top: 18px;
+    color: #8598b7;
+}
+
+.basicInfo nav ul li a {
+    color: #bfcadf;
+    text-decoration: none;
+}
+
+.basicInfo nav {
+    margin: 30px auto;
+}
+
+section {
+    padding: 2rem;
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.social-icon {
+    display: flex;
+    font-size: 28px;
+    color: #8598b7;
+    gap: 24px;
+    margin-top: 26px;
+}
+
+.my-info div {
+    color: #8598b7;
+}
+
+.basicInfo {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.my-info {
+    flex: 1;
+    overflow-y: scroll;
+    background-color: transparent;
+}
+
+.my-info::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.my-info::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.my-info::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+}
