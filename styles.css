@@ -11,16 +11,13 @@ header {
     padding: 2rem;
 }
 
-.container {
-    height: 85vh;
+div {
+    cursor: default;
 }
 
-.basicInfo {
-    flex: 1;
-    position: sticky;
-    top: 0;
-    height: 80vh;
-    overflow-y: hidden;
+.containers {
+    display: flex;
+    height: 85vh;
 }
 
 .basicInfo h1 {
@@ -64,6 +61,7 @@ label {
     color: #8598b7;
     gap: 24px;
     margin-top: 26px;
+    margin-bottom: 26px;
 }
 
 .nav ul li a:hover,
@@ -116,4 +114,45 @@ ul.experiences ul {
     display: flex;
     column-gap: 20px;
     flex-wrap: wrap;
+}
+
+.skillChildFirst,
+.skillChildSecond {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.skillChildFirst li {
+    width: 30%;
+}
+
+
+.skillChildSecond li {
+    width: 45%;
+}
+
+.fas, .fab {
+    width: 25px;
+}
+
+@media screen and (max-width: 780px) {
+    .containers {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sticker-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    .sticker-button i:hover {
+        color: #ccd7ed;
+    }
 }

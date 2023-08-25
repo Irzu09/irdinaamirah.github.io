@@ -15,12 +15,13 @@
     <script src="sectionB.js" defer></script>
 </head>
 
-<body class="mx-auto min-h-screen max-w-screen-xl px-6 py-10 md:px-10 md:py-10 lg:px-10 lg:py-10">
+<body class="h-100 mx-auto min-h-screen max-w-screen-xl px-6 py-10 md:px-10 md:py-10 lg:px-10 lg:py-10">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-    <div class="d-flex container">
-        <section class="basicInfo w-full md:w-1/2 lg:w-1/2">
+    <div class="d-flex containers">
+        <a href="#top" class="sticker-button"><i class="fas fa-arrow-up"></i></a>
+        <section class="basicInfo w-full md:w-1/2 lg:w-1/2" id="top">
             <div>
                 <h1>Irdina Amirah</h1>
                 <h4>Frontend Developer in TCS</h4>
@@ -112,7 +113,7 @@
                                 NEXTJS, JAVASCRIPT, HTML, CSS, BOOTSTRAP and ANT DESIGN. In this project, I am doing
                                 task such as:</p>
                             <ul>
-                                <li>CWrite the code for UI/UX design.</li>
+                                <li>Write the code for UI/UX design.</li>
                                 <li>Write the functionalities and logics for the functions.</li>
                                 <li>Perform code testing and debugging</li>
                                 <li>Perform API integration in the frontend flow.</li>
@@ -180,49 +181,86 @@
                     <label>SKILLS</label>
                     <div class="skills">
                         <strong>Progamming skills:</strong>
-                        <ul class="pl-0">
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>NextJS</li>
-                            <li>React</li>
-                            <li>SQL</li>
-                            <li>GitHub</li>
-                            <li>Bootstrap</li>
-                            <li>AntDesign</li>
+                        <ul class="pl-0 skillChildFirst">
+                            <li><i class="fab fa-js"></i>&ensp;JavaScript</li>
+                            <li><i class="fab fa-html5"></i>&ensp;HTML</li>
+                            <li><i class="fab fa-css3-alt"></i>&ensp;CSS</li>
+                            <li><i class="fab fa-python"></i>&ensp;Python</li>
+                            <li><i class="fab fa-java"></i>&ensp;Java</li>
+                            <li><i class="fab fa-php"></i>&ensp;PHP</li>
+                            <li><i class="fas fa-database"></i>&ensp;SQL</li>
+                            <li><i class="fab fa-react"></i>&ensp;NextJS</li>
+                            <li><i class="fab fa-react"></i>&ensp;ReactJS</li>
+                            <li><i class="fab fa-github"></i>&ensp;GitHub</li>
+                            <li><i class="fab fa-bootstrap"></i>&ensp;Bootstrap</li>
+                            <li><i class="fas fa-toolbox"></i>&ensp;AntDesign</li>
                         </ul>
                     </div>
                     <div>
                         <strong>Technical skills:</strong>
-                        <ul class="pl-0">
-                            <li>Microsoft Office</li>
-                            <li>Microsoft Power BI</li>
-                            <li>Tableau</li>
-                            <li>Entrepreneurship skills</li>
-                            <li>SEO & SEM understanding</li>
+                        <ul class="pl-0 skillChildSecond">
+                            <li><i class="fas fa-code"></i>&ensp;API integration</li>
+                            <li></i><i class="fas fa-eye"></i>&ensp;UI/UX principles</li>
+                            <li><i class="fas fa-bug"></i>&ensp;Debugging skills</li>
+                            <li><i class="fas fa-mobile-alt"></i>&ensp;Responsive Design</li>
+                            <li><i class="fas fa-check"></i>&ensp;Testing and Debugging</li>
+                            <li><i class="fas fa-rocket"></i>&ensp;Web Performance Optimization</li>
+                            <li><i class="fab fa-microsoft"></i>&ensp;Microsoft Office</li>
+                            <li><i class="fas fa-chart-bar"></i>&ensp;Microsoft Power BI</li>
+                            <li><i class="fas fa-table"></i>&ensp;Tableau</li>
+                            <li><i class="fas fa-search"></i>&ensp;SEO & SEM understanding</li>
                         </ul>
                     </div>
                     <div>
                         <strong>Soft skills:</strong>
-                        <ul class="pl-0">
-                            <li>Attention to detail</li>
-                            <li>Analytical thinking</li>
-                            <li>Positive mindset</li>
-                            <li>Communication skills</li>
-                            <li>Leadership</li>
-                            <li>Problem-solving skill</li>
-                            <li>Time management</li>
+                        <ul class="pl-0 skillChildSecond">
+                            <li><i class="fas fa-search"></i>&ensp;Attention to detail</li>
+                            <li><i class="fas fa-chart-line"></i>&ensp;Analytical thinking</li>
+                            <li><i class="fas fa-smile"></i>&ensp;Positive mindset</li>
+                            <li><i class="fas fa-comments"></i>&ensp;Communication skills</li>
+                            <li><i class="fas fa-crown"></i>&ensp;Leadership</li>
+                            <li><i class="fas fa-puzzle-piece"></i>&ensp;Problem-solving skill</li>
+                            <li><i class="fas fa-clock"></i>&ensp;Time management</li>
+                            <li><i class="fas fa-lightbulb"></i>&ensp;Creative & Innovative</li>
+                            <li><i class="fas fa-briefcase"></i>&ensp;Entrepreneurship skills</li>
                         </ul>
                     </div>
                 </div>
                 <div id="trainings">
-                    <label>TRAININGS</label>
-                    <p>Trainings</p>
+                    <label>EXTERNAL TRAININGS</label>
+                    <div class="skills">
+                        <strong>Trainings:</strong>
+                        <ul class="pl-0 training">
+                            <li><i class="fas fa-chalkboard"></i>&ensp;UI/UX course via Corsera</li>
+                            <li><i class="fas fa-laptop-code"></i>&ensp;React and Redux course</li>
+                            <li><i class="fas fa-desktop"></i>&ensp;ReactJs Training via Udemy</li>
+                            <li><i class="fas fa-linkedin"></i>&ensp;Learn GitHub via LinkedIn Learning</li>
+                            <li><i class="fas fa-award"></i>&ensp;Certificate for Data Analytics and Microsoft
+                                Power BI by APU</li>
+                            <li><i class="fas fa-code"></i>&ensp;Learning the JavaScript language</li>
+                            <li><i class="fas fa-java"></i>&ensp;Java 8 and database SQL course under Penjana Program
+                            </li>
+                            <li><i class="fas fa-database"></i>&ensp;Using Database with Python by University of Michigan
+                                via Coursera</li>
+                            <li><i class="fas fa-chart-line"></i>&ensp;Data Science using Python by 360 DigiTMG</li>
+                            <li><i class="fas fa-python"></i>&ensp;Python by DataCamp</li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="activities">
                     <label>OTHER ACTIVITIES</label>
-                    <p>Activities</p>
+                    <div class="skills">
+                        <strong>Other activities:</strong>
+                        <ul class="pl-0 experiences">
+                            <li>Business Advisor and Social Media Executive at Raida Zain Fashion in 2022 - present</li>
+                            <li>Volunteer for MyFundAction during flood in Hulu Langat 2021</li>
+                            <li>Winner Maybank Tiger’s Den Challenge Business Pitching 2020</li>
+                            <li>Best IDP Presentation 2019/2020: Cashless Coin Changer, ECE Department, Kulliyyah
+                                of Engineering, IIUM</li>
+                            <li>Crew volunteer for entrepreneurship seminar under Richworks Sdn Bhd 2019</li>
+                            <li>Participant for Axiata Virtual Girl Coding Competition 2021</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
