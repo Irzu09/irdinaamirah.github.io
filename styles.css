@@ -129,7 +129,6 @@ ul.experiences ul {
     width: 30%;
 }
 
-
 .skillChildSecond li {
     width: 45%;
 }
@@ -171,5 +170,9 @@ ul.experiences ul {
     .fas,
     .fab {
         width: 15px;
+    }
+
+    .skillChildFirst li {
+        width: 45%;
     }
 }
