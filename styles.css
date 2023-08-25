@@ -162,8 +162,8 @@ ul.experiences ul {
         color: #ccd7ed;
     }
 
-    section.my-info,
-    section.basicInfo {
+    .my-info,
+    .basicInfo {
         padding: 0 !important;
     }
 
@@ -173,6 +173,6 @@ ul.experiences ul {
     }
 
     .skillChildFirst li {
-        width: 45%;
+        width: 45% !important;
     }
 }
