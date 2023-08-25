@@ -46,7 +46,8 @@ div {
     margin: 30px auto;
 }
 
-section {
+section.my-info,
+section.basicInfo {
     padding: 2rem;
 }
 
@@ -160,5 +161,15 @@ ul.experiences ul {
 
     .sticker-button i:hover {
         color: #ccd7ed;
+    }
+
+    section.my-info,
+    section.basicInfo {
+        padding: 0 !important;
+    }
+
+    .fas,
+    .fab {
+        width: 15px;
     }
 }
