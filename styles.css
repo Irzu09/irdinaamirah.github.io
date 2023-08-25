@@ -133,8 +133,13 @@ ul.experiences ul {
     width: 45%;
 }
 
-.fas, .fab {
+.fas,
+.fab {
     width: 25px;
+}
+
+.sticker-button {
+    display: none;
 }
 
 @media screen and (max-width: 780px) {
@@ -145,6 +150,7 @@ ul.experiences ul {
     }
 
     .sticker-button {
+        display: block;
         position: fixed;
         bottom: 20px;
         right: 20px;
