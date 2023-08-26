@@ -1,3 +1,51 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bouncing-element{
+    animation: bounce 1s ease 0s 1 normal forwards;
+}
+
+.flipping-element a:hover {
+    animation: flip 1s ease-in-out;
+}
+
+.animated-element {
+    animation: fadeIn 1s ease-in-out;
+}
+
 body {
     font-family: 'Roboto Serif', serif;
     margin: 0;
@@ -65,9 +113,19 @@ label {
     margin-bottom: 26px;
 }
 
+.my-info div div label a {
+    text-decoration: none;
+    color: #8598b7;
+}
+
 .nav ul li a:hover,
-.my-info div div label:hover {
+.my-info div div label a:hover {
     color: aqua;
+}
+
+.nav ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .my-info {
@@ -111,6 +169,10 @@ ul.experiences ul {
     list-style-type: circle;
 }
 
+ul.activities {
+    list-style-type: square;
+}
+
 .skills div {
     display: flex;
     column-gap: 20px;
@@ -125,17 +187,33 @@ ul.experiences ul {
     column-gap: 10px;
 }
 
+.training {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .skillChildFirst li {
     width: 30%;
+    display: flex;
+    gap: 10px;
 }
 
 .skillChildSecond li {
     width: 45%;
+    display: flex;
+    gap: 10px;
 }
 
-.fas,
-.fab {
-    width: 25px;
+.training li {
+    display: flex;
+    gap: 10px;
+}
+
+.skillChildFirst li i,
+.skillChildSecond li i,
+.training li i {
+    width: 20px;
 }
 
 .sticker-button {
@@ -167,12 +245,11 @@ ul.experiences ul {
         padding: 0 !important;
     }
 
-    .fas,
-    .fab {
-        width: 15px;
-    }
-
     .skillChildFirst li {
         width: 45% !important;
+    }
+
+    .skillChildSecond li {
+        width: 100%;
     }
 }

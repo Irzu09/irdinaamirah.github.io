@@ -10,23 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="sectionA.js" defer></script>
-    <script src="sectionB.js" defer></script>
+
+    <script>
+        window.addEventListener('load', function () {
+            const contentContainer = document.querySelector('.content');
+            contentContainer.classList.add('active');
+        });
+    </script>
 </head>
 
 <body class="h-100 mx-auto min-h-screen max-w-screen-xl px-6 py-10 md:px-10 md:py-10 lg:px-10 lg:py-10">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-    <div class="d-flex containers">
+    <div class="d-flex containers animated-element">
         <a href="#top" class="sticker-button"><i class="fas fa-arrow-up"></i></a>
-        <section class="basicInfo w-full md:w-1/2 lg:w-1/2" id="top">
+        <section class="basicInfo w-full md:w-1/2 lg:w-1/2 bouncing-element" id="top">
             <div>
                 <h1>Irdina Amirah</h1>
                 <h4>Frontend Developer in TCS</h4>
                 <p>Crafting engaging and user-centric web interfaces that blend creativity with functionality.</p>
             </div>
+
             <nav class="nav">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -38,17 +45,17 @@
                     <li><a href="#activities">Other activities</a></li>
                 </ul>
             </nav>
-            <div class="social-icon">
+            <div class="social-icon flipping-element">
                 <a href="mailto:irdinaamirah97@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/irzu09"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/irdinaamirah"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/irzu09"><i class="fab fa-instagram"></i></a>
             </div>
         </section>
-        <section class="my-info w-full md:w-1/2 lg:w-1/2">
+        <section class="my-info w-full md:w-1/2 lg:w-1/2 bouncing-element">
             <div>
                 <div id="about">
-                    <label>ABOUT</label>
+                    <label><a href="#about">ABOUT</a></label>
                     <p>
                         My coding journey began with a curiosity about how websites and apps work. Exploring HTML, CSS,
                         and JavaScript, I realized frontend development's power in shaping user-tech interaction,
@@ -65,8 +72,8 @@
                     </p>
                 </div>
                 <div id="experiences">
-                    <label>EXPERIENCES</label>
-                    <ul class="pl-0 experiences">
+                    <label><a href="#experiences">EXPERIENCES</a></label>
+                    <ul class="pl-4 experiences">
                         <li>
                             <strong>May 2021 - Present: Frontend developer</strong><br />
                             <i>Tata Consutancy Services</i>
@@ -104,8 +111,8 @@
                     </ul>
                 </div>
                 <div id="projects">
-                    <label>PROJECTS</label>
-                    <ul class="pl-0 experiences">
+                    <label><a href="#projects">PROJECTS</a></label>
+                    <ul class="pl-4 experiences">
                         <li>
                             <strong>System & Web App Development for Telecommunication Company</strong><br />
                             <p>I am currently working in this project as a FRONT-END DEVELOPER. The languages, tools and
@@ -161,8 +168,8 @@
                     </ul>
                 </div>
                 <div id="education">
-                    <label>EDUCATIONS</label>
-                    <ul class="pl-0 experiences">
+                    <label><a href="#education">EDUCATIONS</a></label>
+                    <ul class="pl-4 experiences">
                         <li>
                             <strong>2017 - 2021: International Islamic University Malaysia</strong><br />
                             <i>Bachelor of Engineering (Electronics & Computer Information)</i>
@@ -178,80 +185,163 @@
                     </ul>
                 </div>
                 <div id="skills">
-                    <label>SKILLS</label>
+                    <label><a href="#skills">SKILLS</a></label>
                     <div class="skills">
                         <strong>Progamming skills:</strong>
                         <ul class="pl-0 skillChildFirst">
-                            <li><i class="fab fa-js"></i>JavaScript</li>
-                            <li><i class="fab fa-html5"></i>HTML</li>
-                            <li><i class="fab fa-css3-alt"></i>CSS</li>
-                            <li><i class="fab fa-python"></i>Python</li>
-                            <li><i class="fab fa-java"></i>Java</li>
-                            <li><i class="fab fa-php"></i>PHP</li>
-                            <li><i class="fas fa-database"></i>SQL</li>
-                            <li><i class="fab fa-react"></i>NextJS</li>
-                            <li><i class="fab fa-react"></i>ReactJS</li>
-                            <li><i class="fab fa-github"></i>GitHub</li>
-                            <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
-                            <li><i class="fas fa-toolbox"></i>AntDesign</li>
+                            <li><i class="fab fa-js"></i>
+                                <div>JavaScript</div>
+                            </li>
+                            <li><i class="fab fa-html5"></i>
+                                <div>HTML</div>
+                            </li>
+                            <li><i class="fab fa-css3-alt"></i>
+                                <div>CSS</div>
+                            </li>
+                            <li><i class="fab fa-python"></i>
+                                <div>Python</div>
+                            </li>
+                            <li><i class="fab fa-java"></i>
+                                <div>Java</div>
+                            </li>
+                            <li><i class="fab fa-php"></i>
+                                <div>PHP</div>
+                            </li>
+                            <li><i class="fas fa-database"></i>
+                                <div>SQL</div>
+                            </li>
+                            <li><i class="fab fa-react"></i>
+                                <div>NextJS</div>
+                            </li>
+                            <li><i class="fab fa-react"></i>
+                                <div>ReactJS</div>
+                            </li>
+                            <li><i class="fab fa-github"></i>
+                                <div>GitHub</div>
+                            </li>
+                            <li><i class="fab fa-bootstrap"></i>
+                                <div>Bootstrap</div>
+                            </li>
+                            <li><i class="fas fa-toolbox"></i>
+                                <div>AntDesign</div>
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <strong>Technical skills:</strong>
                         <ul class="pl-0 skillChildSecond">
-                            <li><i class="fas fa-code"></i>API integration</li>
-                            <li></i><i class="fas fa-eye"></i>UI/UX principles</li>
-                            <li><i class="fas fa-bug"></i>Debugging skills</li>
-                            <li><i class="fas fa-mobile-alt"></i>Responsive Design</li>
-                            <li><i class="fas fa-check"></i>Testing and Debugging</li>
-                            <li><i class="fas fa-rocket"></i>Web Performance Optimization</li>
-                            <li><i class="fab fa-microsoft"></i>Microsoft Office</li>
-                            <li><i class="fas fa-chart-bar"></i>Microsoft Power BI</li>
-                            <li><i class="fas fa-table"></i>Tableau</li>
-                            <li><i class="fas fa-search"></i>SEO & SEM understanding</li>
+                            <li><i class="fas fa-code"></i>
+                                <div>API integration</div>
+                            </li>
+                            <li><i class="fas fa-eye"></i>
+                                <div>UI/UX principles</div>
+                            </li>
+                            <li><i class="fas fa-bug"></i>
+                                <div>Debugging skills</div>
+                            </li>
+                            <li><i class="fas fa-mobile-alt"></i>
+                                <div>Responsive Design</div>
+                            </li>
+                            <li><i class="fas fa-check"></i>
+                                <div>Testing and Debugging</div>
+                            </li>
+                            <li><i class="fas fa-rocket"></i>
+                                <div>Web Performance Optimization</div>
+                            </li>
+                            <li><i class="fab fa-microsoft"></i>
+                                <div>Microsoft Office</div>
+                            </li>
+                            <li><i class="fas fa-chart-bar"></i>
+                                <div>Microsoft Power BI</div>
+                            </li>
+                            <li><i class="fas fa-table"></i>
+                                <div>Tableau</div>
+                            </li>
+                            <li><i class="fas fa-search"></i>
+                                <div>SEO & SEM understanding</div>
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <strong>Soft skills:</strong>
                         <ul class="pl-0 skillChildSecond">
-                            <li><i class="fas fa-search"></i>Attention to detail</li>
-                            <li><i class="fas fa-chart-line"></i>Analytical thinking</li>
-                            <li><i class="fas fa-smile"></i>Positive mindset</li>
-                            <li><i class="fas fa-comments"></i>Communication skills</li>
-                            <li><i class="fas fa-crown"></i>Leadership</li>
-                            <li><i class="fas fa-puzzle-piece"></i>Problem-solving skill</li>
-                            <li><i class="fas fa-clock"></i>Time management</li>
-                            <li><i class="fas fa-lightbulb"></i>Creative & Innovative</li>
-                            <li><i class="fas fa-briefcase"></i>Entrepreneurship skills</li>
+                            <li><i class="fas fa-search"></i>
+                                <div>Attention to detail</div>
+                            </li>
+                            <li><i class="fas fa-chart-line"></i>
+                                <div>Analytical thinking</div>
+                            </li>
+                            <li><i class="fas fa-smile"></i>
+                                <div>Positive mindset</div>
+                            </li>
+                            <li><i class="fas fa-comments"></i>
+                                <div>Communication skills</div>
+                            </li>
+                            <li><i class="fas fa-crown"></i>
+                                <div>Leadership</div>
+                            </li>
+                            <li><i class="fas fa-puzzle-piece"></i>
+                                <div>Problem-solving skill</div>
+                            </li>
+                            <li><i class="fas fa-clock"></i>
+                                <div>Time management</div>
+                            </li>
+                            <li><i class="fas fa-lightbulb"></i>
+                                <div>Creative & Innovative</div>
+                            </li>
+                            <li><i class="fas fa-briefcase"></i>
+                                <div>Entrepreneurship skills</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div id="trainings">
-                    <label>EXTERNAL TRAININGS</label>
+                    <label><a href="#trainings">EXTERNAL TRAININGS</a></label>
                     <div class="skills">
                         <strong>Trainings:</strong>
                         <ul class="pl-0 training">
-                            <li><i class="fas fa-chalkboard"></i>UI/UX course via Corsera</li>
-                            <li><i class="fas fa-laptop-code"></i>React and Redux course</li>
-                            <li><i class="fas fa-desktop"></i>ReactJs Training via Udemy</li>
-                            <li><i class="fas fa-linkedin"></i>Learn GitHub via LinkedIn Learning</li>
-                            <li><i class="fas fa-award"></i>Certificate for Data Analytics and Microsoft
-                                Power BI by APU</li>
-                            <li><i class="fas fa-code"></i>Learning the JavaScript language</li>
-                            <li><i class="fas fa-java"></i>Java 8 and database SQL course under Penjana Program
+                            <li><i class="fas fa-chalkboard"></i>
+                                <div>UI/UX course via Corsera</div>
                             </li>
-                            <li><i class="fas fa-database"></i>Using Database with Python by University of Michigan
-                                via Coursera</li>
-                            <li><i class="fas fa-chart-line"></i>Data Science using Python by 360 DigiTMG</li>
-                            <li><i class="fas fa-python"></i>Python by DataCamp</li>
+                            <li><i class="fas fa-laptop-code"></i>
+                                <div>React and Redux course</div>
+                            </li>
+                            <li><i class="fas fa-desktop"></i>
+                                <div>ReactJs Training via Udemy</div>
+                            </li>
+                            <li><i class="fas fa-linkedin"></i>
+                                <div>Learn GitHub via LinkedIn Learning</div>
+                            </li>
+                            <li><i class="fas fa-award"></i>
+                                <div>Certificate for Data Analytics and Microsoft
+                                    Power BI by APU</div>
+                            </li>
+                            <li><i class="fas fa-code"></i>
+                                <div>Learning the JavaScript language</div>
+                            </li>
+                            <li><i class="fas fa-java"></i>
+                                <div>Java 8 and database SQL course under Penjana Program
+                                </div>
+                            </li>
+                            <li><i class="fas fa-database"></i>
+                                <div>Using Database with Python by University of Michigan
+                                    via Coursera</div>
+                            </li>
+                            <li><i class="fas fa-chart-line"></i>
+                                <div>Data Science using Python by 360 DigiTMG</div>
+                            </li>
+                            <li><i class="fas fa-python"></i>
+                                <div>Python by DataCamp</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div id="activities">
                     <label>OTHER ACTIVITIES</label>
+                    <label><a href="#activities">OTHER ACTIVITIES</a></label>
                     <div class="skills">
                         <strong>Other activities:</strong>
-                        <ul class="pl-0 experiences">
+                        <ul class="pl-4 activities">
                             <li>Business Advisor and Social Media Executive at Raida Zain Fashion in 2022 - present</li>
                             <li>Volunteer for MyFundAction during flood in Hulu Langat 2021</li>
                             <li>Winner Maybank Tiger’s Den Challenge Business Pitching 2020</li>
