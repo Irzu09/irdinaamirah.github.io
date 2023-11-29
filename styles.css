@@ -96,12 +96,12 @@ div {
 }
 
 .basicInfo nav {
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 section.my-info,
 section.basicInfo {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 label {
