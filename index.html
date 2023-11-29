@@ -26,31 +26,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <div class="d-flex containers animated-element">
-        <a href="#top" class="sticker-button"><i class="fas fa-arrow-up"></i></a>
+        <a href="#top" class="sticker-button cursor-pointer"><i class="fas fa-arrow-up"></i></a>
+        <!-- <button id="downloadButton" class="sticker-button cursor-pointer">Download My CV</button> -->
         <section class="basicInfo w-full md:w-1/2 lg:w-1/2 bouncing-element" id="top">
             <div>
                 <h1>Irdina Amirah</h1>
-                <h4>Frontend Developer in TCS</h4>
+                <h4>Developer at Maybank</h4>
                 <p>Crafting engaging and user-centric web interfaces that blend creativity with functionality.</p>
             </div>
+
+
+            <!-- <script>
+                document.getElementById('downloadButton').addEventListener('click', function () {
+                    var blob = new Blob(['Hello, this is the content of the text file.'], { type: 'text/plain' });
+                    var link = document.createElement('a');
+                    link.download = 'example.txt';
+                    link.href = window.URL.createObjectURL(blob);
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            </script> -->
 
             <nav class="nav">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projectsCompany">Company / University Projects</a></li>
+                    <li><a href="#projectsPersonal">Personal Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#trainings">Trainings</a></li>
                     <li><a href="#activities">Other activities</a></li>
                 </ul>
             </nav>
-            <div class="social-icon flipping-element">
-                <a href="mailto:irdinaamirah97@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/irzu09"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/irdinaamirah"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/irzu09"><i class="fab fa-instagram"></i></a>
+
+            <div class="containerSocialMedia">
+                <div class="social-icon flipping-element">
+                    <a href="mailto:irdinaamirah97@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/irzu09"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/irdinaamirah"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/irzu09"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="font12">Last updated: Nov 29, 2023 - Irdina Amirah</div>
             </div>
+
         </section>
         <section class="my-info w-full md:w-1/2 lg:w-1/2 bouncing-element">
             <div>
@@ -75,13 +95,32 @@
                     <label><a href="#experiences">EXPERIENCES</a></label>
                     <ul class="pl-4 experiences">
                         <li>
-                            <strong>May 2021 - Present: Frontend developer</strong><br />
+                            <strong>November 2023 - Present: Developer</strong><br />
+                            <i>Maybank</i>
+                            <p>Ongoing training for low-code platform.</p>
+                            <ul>
+                                <li>Learn to develope full-stack applications using OutSystems, a low-code platform, to
+                                    rapidly
+                                    design, implement, and deploy solutions.</li>
+                                <li>Learn to designed and implemented user interfaces, business logic, and data
+                                    integrations,
+                                    leveraging OutSystems visual development tools.</li>
+                                <li>Learn to conducte testing and debugging, resolving issues promptly to ensure the
+                                    reliability and performance of applications.</li>
+                                <li>Learn about OutSystems Forge components and adhered to best practices for efficient
+                                    and reusable code.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>May 2021 - November 2023: Frontend Developer</strong><br />
                             <i>Tata Consutancy Services</i>
                             <p>Build a system and web applications for the telecommunication company.</p>
                             <ul>
-                                <li>Collaborate with the designers and backend developers to understand the requirement
+                                <li>Collaborate with the UI designers and backend developers to understand the
+                                    requirement
                                     and translate them into functional code.</li>
                                 <li>Write a clean, efficient, and maintainable JavaScript, HTML and CSS code.</li>
+                                <li>Develop reusable components for code reusability.</li>
                                 <li>Optimize the system application performance load times.</li>
                                 <li>Test and debug the code to identify and fix ay issues.</li>
                                 <li>Ensuring cross-browser compatibility and responsiveness of the system.</li>
@@ -97,12 +136,12 @@
                             <p>Support the data science team and developer team for the ongoing project contact tracing
                                 app.</p>
                             <ul>
-                                <li>Performed the data cleaning to prepare the data to be processed and analyzed.</li>
-                                <li>Performed the geocoding to transform the description address into a pair of
+                                <li>Perform the data cleaning to prepare the data to be processed and analyzed.</li>
+                                <li>Perform the geocoding to transform the description address into a pair of
                                     coordinates.
                                 </li>
-                                <li>Performed the UI design for the app page using UI design app.</li>
-                                <li>Developed and design the website using Php and Laragon.</li>
+                                <li>Perform the UI design for the app page using UI design app.</li>
+                                <li>Develop and design the website using Php and Laragon.</li>
                                 <li>Develop the logic and functionality for the component based on the feature in the
                                     page.
                                 </li>
@@ -110,8 +149,8 @@
                         </li>
                     </ul>
                 </div>
-                <div id="projects">
-                    <label><a href="#projects">PROJECTS</a></label>
+                <div id="projectsCompany">
+                    <label><a href="#projectsCompany">COMPANY / UNIVERSITY PROJECTS</a></label>
                     <ul class="pl-4 experiences">
                         <li>
                             <strong>System & Web App Development for Telecommunication Company</strong><br />
@@ -163,6 +202,46 @@
                                 <li>Write the code to instruct the Arduino board.</li>
                                 <li>Set up the Blynk app and connect it with the device.</li>
                                 <li>Perform test and debug the code and flow.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="projectsPersonal">
+                    <label><a href="#projectsPersonal">PERSONAL PROJECTS</a></label>
+                    <ul class="pl-4 experiences">
+                        <li>
+                            <strong>Tailoring Management Application [NextJS, MySQL] - In early development
+                                phase</strong><br />
+                            <p>Developed a comprehensive tailoring management application from inception to
+                                implementation, providing a tailored solution for recording customer body measurements
+                                and fashion preferences during the ordering process.</p>
+                            <ul>
+                                <li>Design and implement the entire application architecture and user interface.</li>
+                                <li>Integrate features for recording customer information, including phone numbers,
+                                    names, and addresses.</li>
+                                <li>Implement a simple yet effective account management system to enhance user
+                                    experience and customer data organization.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Simple Calculator Application [NextJS]</strong><br />
+                            <p>Independently conceptualized, designed, and implemented a user-friendly simple calculator
+                                application.</p>
+                            <ul>
+                                <li>Basic arithmetic operations: addition, subtraction, multiplication, and division.
+                                </li>
+                                <li>Clean and intuitive user interface for seamless user interaction.</li>
+                                <li>Error handling mechanisms for input validation.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>CRUD Data Management Application [NextJS, MySQL]</strong><br />
+                            <p>Independently designed and implemented a basic CRUD application focused on efficient data
+                                management.</p>
+                            <ul>
+                                <li>Implemented Create, Read, Update, and Delete operations for database records.</li>
+                                <li>Developed a user-friendly interface for seamless data manipulation.</li>
+                                <li>Ensured data integrity and reliability through proper error handling.</li>
                             </ul>
                         </li>
                     </ul>
@@ -219,11 +298,20 @@
                             <li><i class="fab fa-github"></i>
                                 <div>GitHub</div>
                             </li>
+                            <li><i class="fa-solid fa-signs-post"></i>
+                                <div>Postman</div>
+                            </li>
                             <li><i class="fab fa-bootstrap"></i>
                                 <div>Bootstrap</div>
                             </li>
                             <li><i class="fas fa-toolbox"></i>
                                 <div>AntDesign</div>
+                            </li>
+                            <li><i class="fa-solid fa-code"></i>
+                                <div>Outsystem (learning)</div>
+                            </li>
+                            <li><i class="fa-brands fa-node-js"></i>
+                                <div>Nodejs (learning)</div>
                             </li>
                         </ul>
                     </div>
@@ -259,6 +347,9 @@
                             </li>
                             <li><i class="fas fa-search"></i>
                                 <div>SEO & SEM understanding</div>
+                            </li>
+                            <li><i class="fa-solid fa-globe"></i>
+                                <div>Website Development</div>
                             </li>
                         </ul>
                     </div>
@@ -337,7 +428,6 @@
                     </div>
                 </div>
                 <div id="activities">
-                    <label>OTHER ACTIVITIES</label>
                     <label><a href="#activities">OTHER ACTIVITIES</a></label>
                     <div class="skills">
                         <strong>Other activities:</strong>

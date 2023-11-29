@@ -34,7 +34,7 @@
     }
 }
 
-.bouncing-element{
+.bouncing-element {
     animation: bounce 1s ease 0s 1 normal forwards;
 }
 
@@ -61,6 +61,11 @@ header {
 
 div {
     cursor: default;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    z-index: 3;
 }
 
 .containers {
@@ -109,8 +114,16 @@ label {
     font-size: 28px;
     color: #8598b7;
     gap: 24px;
+}
+
+.containerSocialMedia {
     margin-top: 26px;
     margin-bottom: 26px;
+}
+
+.font12 {
+    font-size: 12px;
+    color: #bfcadf;
 }
 
 .my-info div div label a {
@@ -219,6 +232,10 @@ ul.activities {
 .sticker-button {
     display: none;
 }
+
+/* #downloadButton {
+    color: #bfcadf;
+} */
 
 @media screen and (max-width: 780px) {
     .containers {
